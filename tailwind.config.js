@@ -1,0 +1,48 @@
+module.exports = {
+  theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000000',
+      onyx: '#101010',
+      seashell: '#F1F1F1',
+      bianca: '#FAFAFA',
+      white: '#FFFFFF',
+      raw_sienna: '#D87D4A',
+      peach: '#FBAF85',
+    },
+    fontFamily: {
+      sans: ['Manrope', 'sans-serif'],
+    },
+    letterSpacing: {
+      h1: '0.125rem',
+      h2: '0.094rem',
+      h3: '0.072rem',
+      h4: '0.125rem',
+      h5: '0.106rem',
+      h6: '0.081rem',
+      overline: '0.625rem',
+      subTitle: '0.063rem',
+    },
+    lineHeight: {
+      1: '3.625rem',
+      2: '2.75rem',
+      3: '2.25rem',
+      4: '2.375rem',
+      5: '2.063rem',
+      6: '1.5rem',
+      overline: '1.188rem',
+      subTitle: '1.563rem',
+      body: '1.563rem',
+    },
+  },
+  plugins: [require('daisyui')],
+  content: [
+    `./components/**/*.{vue,js,ts}`,
+    `./layouts/**/*.vue`,
+    `./pages/**/*.vue`,
+    `./composables/**/*.{js,ts}`,
+    `./plugins/**/*.{js,ts}`,
+    `./error.{js,ts,vue}`,
+  ],
+}
